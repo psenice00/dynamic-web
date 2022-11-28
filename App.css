@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+
+.primary-color{
+  color: #F0B90B;
+}
+
+ textarea:hover,
+ input:hover,
+ textarea:active,
+ input:active,
+ textarea:focus,
+ button:focus,
+ button:active,
+ button:hover,
+ label:focus,
+ .btn:active,
+ .btn.active,
+ .form-control,
+ .custom-control-input:focus ~ .custom-control-label::before
+ {
+     outline:0px !important;
+     -webkit-appearance:none;
+     box-shadow: none !important;
+ }
+
+ .btn-outline-primary{
+  border-color: #F0B90B !important;
+  color: #F0B90B !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .active, .btn-outline-primary:visited {
+  background-color: #F0B90B !important;
+  color: white !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before
+{
+  border-color: #F0B90B !important;
+  background-color: #F0B90B !important;
+}
+
+.form-control:focus, .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: #F0B90B !important;
+}
+
+.MuiFormLabel-root, .MuiOutlinedInput-root{
+  color: #F0B90B !important;
+
+}
+
+.footer{
+  border-top: 1px solid #F0B90B;
+  color: #F0B90B !important;
+  bottom: 0;
+  left: 0;
+}
+
+.pulse-alarm{
+	transform: scale(1);
+  background: rgba(255, 82, 82, 1);
+	box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+	animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 12px rgba(255, 82, 82, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+	}
+}
